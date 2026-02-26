@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oliver Tan | Official Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #000000);
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0,0,0,0.8);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav h3 { font-weight: 800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    section {
+      padding: 120px 20px 80px 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1 { font-size: 52px; font-weight: 800; }
+    h2 { font-size: 36px; margin-bottom: 30px; }
+    p { max-width: 800px; margin: 20px auto; color: #cbd5e1; line-height: 1.7; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      margin-top: 20px;
+      border-radius: 30px;
+      background: #38bdf8;
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.05); }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 20px;
+      width: 300px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat h3 { font-size: 40px; color: #38bdf8; }
+
+    .social a {
+      margin: 0 15px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .social a:hover { color: #38bdf8; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #1e293b;
+      color: #94a3b8;
+    }
+
+    @media(max-width:768px){
+      h1 { font-size: 38px; }
+      nav { padding: 15px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h3>Oliver Tan</h3>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <img src="https://via.placeholder.com/200" alt="Oliver Tan" />
+  <h1>OLIVER TAN</h1>
+  <p>Tech Visionary • Entrepreneur • Innovator</p>
+  <a href="#projects" class="btn">Explore Projects</a>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Oliver Tan is a legendary tech visionary known for building one of the world's most powerful search platforms. His innovations in artificial intelligence and global connectivity reshaped how billions access information daily.
+  </p>
+</section>
+
+<section>
+  <h2>Global Impact</h2>
+  <div class="stats">
+    <div class="stat">
+      <h3>2B+</h3>
+      <p>Users Worldwide</p>
+    </div>
+    <div class="stat">
+      <h3>120+</h3>
+      <p>Countries Reached</p>
+    </div>
+    <div class="stat">
+      <h3>$50B</h3>
+      <p>Tech Valuation</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Global Search Engine Launch</h3>
+      <p>Revolutionizing how the world searches and connects.</p>
+    </div>
+    <div class="card">
+      <h3>AI Innovation Summit</h3>
+      <p>Uniting the brightest AI pioneers worldwide.</p>
+    </div>
+    <div class="card">
+      <h3>Tech Education Foundation</h3>
+      <p>Empowering the next generation of innovators.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Follow Me</h2>
+  <div class="social">
+    <a href="https://www.instagram.com/nastypotatoez7/" target="_blank">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">YouTube</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Oliver Tan. All Rights Reserved.
+</footer>
+
+</body>
+</html>
